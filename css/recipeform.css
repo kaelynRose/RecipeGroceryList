@@ -1,0 +1,11 @@
+table {
+    width: 100%;
+    margin-bottom: 1rem;
+}
+label {
+    display: block;
+    padding: .25rem;
+}
+#title {
+    width: 100%;
+}

@@ -1,0 +1,174 @@
+:root {
+    --PRIMARY: #632F6B;             /* Header nav and footer */
+    --SECONDARY: #A44EB1;           /* Button background */
+    --HIGHLIGHT: #C895D0;           /* Highlight areas */
+    --OFF-WHITE: #EDDCEF;           /* Background */
+    --SUCCESS: #5CB14E;             /* Success text and highlighting */
+    --ERROR: #B14E4E;               /* Error text and highlighting */
+    --STANDARD-WHITE: #FFFFFF;      /* Standard white */
+    --NOT-BLACK: #211023;           /* Text on light background */
+}
+
+/***** TEXT SETTINGS *****/
+/** Font Styles
+    font-family: 'Quicksand', sans-serif;
+    font-family: 'Raleway', sans-serif;
+    font-family: 'Shadows Into Light Two', cursive;
+**/
+/* Main Heading */
+h1 {
+    font-size: 48px;
+    font-family: 'Shadows Into Light Two', cursive;
+    letter-spacing: .04em;
+    font-weight: 400;
+    line-height: 1.2;
+}
+/* Secondary Heading */
+h2 {
+    font-size: 40px;
+    font-family: 'Shadows Into Light Two', cursive;
+    letter-spacing: .02em;
+    font-weight: 400;
+    line-height: 1.2;
+}
+/* Sub Heading */
+h3 {
+    font-size: 32px;
+    font-family: 'Quicksand', sans-serif;
+    font-weight: 700;
+    line-height: 1.2;
+}
+/* Titles */
+.title {
+    font-size: 24px;
+    font-family: 'Quicksand', sans-serif;
+    font-weight: 700;
+    letter-spacing: .05em;
+    line-height: 1.2;
+}
+/* Subtitle */
+.subtitle {
+    font-family: 'Quicksand', sans-serif;
+    font-size: 20px;
+    font-weight: 600;
+    letter-spacing: .02em;
+    line-height: 1.2;
+}
+/* Body Text */
+.text {
+    font-family: 'Raleway', sans-serif;
+    font-size: 16px;
+    font-weight: 500;
+    letter-spacing: .03em;
+    line-height: 1.8;
+}
+/* Captions */
+.caption {
+    font-family: 'Raleway', sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+    letter-spacing: .03em;
+    line-height: 1.5;
+}
+
+.center {text-align: center;}
+.danger-text {color: var(--ERROR);}
+.success-text {color: var(--SUCCESS);}
+
+/******************
+    Main Styles
+******************/
+html, body {
+    height: 100%;
+}
+body {
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    background-color: var(--OFF-WHITE);
+    color: var(--NOT-BLACK);
+}
+main {
+    flex: 1 0 auto;
+    margin-bottom: 50px;
+}
+footer {
+    flex-shrink: 0;
+}
+header, footer {
+    background-color: var(--PRIMARY);
+    color: var(--STANDARD-WHITE);
+}
+header * {padding: .75rem;}
+nav a {
+    color: var(--STANDARD-WHITE);
+    text-decoration: none;
+}
+nav a:hover,
+nav a:focus-within {
+    text-decoration: underline;
+}
+nav a:visited {
+    color: var(--STANDARD-WHITE);
+}
+nav a.active {
+    text-decoration: underline;
+}
+
+.primary-btn {
+    background-color: var(--SECONDARY);
+    color: var(--STANDARD-WHITE);
+    border-radius: 15px;
+    border: 3px solid var(--OFF-WHITE);
+    padding: .5rem;
+    text-decoration: none;
+}
+.primary-btn:hover {
+    cursor: pointer;
+    background-color: var(--OFF-WHITE);
+    color: var(--NOT-BLACK);
+    text-decoration: underline;
+    transition: .3s;
+}
+
+/******************
+    Form Styles
+******************/
+.custom-form {
+    background-color: var(--HIGHLIGHT);
+    border-radius: 15px;
+    box-shadow: 15px 15px 20px #7c7c7c,
+                -15px -15px 20px #fff;
+    margin: 0 auto;
+    padding: 1rem;
+    width: 65%;
+}
+.small-custom-form {
+    background-color: var(--HIGHLIGHT);
+    border-radius: 15px;
+    box-shadow: 15px 15px 20px #7c7c7c,
+                -15px -15px 20px #fff;
+    margin: 0 auto;
+    padding: 1rem;
+    width: fit-content;
+}
+.small-custom-form .primary-btn{
+    margin: 0 auto;
+    display: block;
+}
+.form-group {
+    margin: 1rem auto;
+}
+
+input[type="text"],
+input[type="number"],
+input[type="password"],
+select {
+    border: none;
+    padding: .5rem;
+    border-radius: 5px;
+}
+section {
+    width: 75%;
+    margin: 0 auto;
+}
